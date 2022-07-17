@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C8D14BE28839A9F00DE82F3 /* BunqPaymentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D14BD28839A9F00DE82F3 /* BunqPaymentApp.swift */; };
+		4C8D14C028839A9F00DE82F3 /* TransactionOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D14BF28839A9F00DE82F3 /* TransactionOverviewView.swift */; };
+		4C8D14C228839AA000DE82F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D14C128839AA000DE82F3 /* Assets.xcassets */; };
+		4C8D14C528839AA000DE82F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D14C428839AA000DE82F3 /* Preview Assets.xcassets */; };
+		4C8D14CF28839AA000DE82F3 /* BunqPaymentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D14CE28839AA000DE82F3 /* BunqPaymentTests.swift */; };
+		4C8D14D928839AA000DE82F3 /* BunqPaymentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D14D828839AA000DE82F3 /* BunqPaymentUITests.swift */; };
+		4C8D14DB28839AA000DE82F3 /* BunqPaymentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D14DA28839AA000DE82F3 /* BunqPaymentUITestsLaunchTests.swift */; };
+		4C8D14E928839AF300DE82F3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4C8D14E828839AF300DE82F3 /* RealmSwift */; };
+		4C8D14ED28839B1B00DE82F3 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D14EC28839B1B00DE82F3 /* Transaction.swift */; };
+		4C8D14EF28839C3E00DE82F3 /* TransactionLocalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D14EE28839C3E00DE82F3 /* TransactionLocalModel.swift */; };
+		4C8D14F128839CEE00DE82F3 /* TransactionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D14F028839CEE00DE82F3 /* TransactionError.swift */; };
+		4C8D14F42883A15200DE82F3 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D14F32883A15200DE82F3 /* TransactionViewModel.swift */; };
+		4C8D14F72883A17900DE82F3 /* TransactionSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D14F62883A17900DE82F3 /* TransactionSuccessView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C8D14CB28839AA000DE82F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C8D14B228839A9F00DE82F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C8D14B928839A9F00DE82F3;
+			remoteInfo = BunqPayment;
+		};
+		4C8D14D528839AA000DE82F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C8D14B228839A9F00DE82F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C8D14B928839A9F00DE82F3;
+			remoteInfo = BunqPayment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C8D14BA28839A9F00DE82F3 /* BunqPayment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BunqPayment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8D14BD28839A9F00DE82F3 /* BunqPaymentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunqPaymentApp.swift; sourceTree = "<group>"; };
+		4C8D14BF28839A9F00DE82F3 /* TransactionOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionOverviewView.swift; sourceTree = "<group>"; };
+		4C8D14C128839AA000DE82F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C8D14C428839AA000DE82F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C8D14CA28839AA000DE82F3 /* BunqPaymentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BunqPaymentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8D14CE28839AA000DE82F3 /* BunqPaymentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunqPaymentTests.swift; sourceTree = "<group>"; };
+		4C8D14D428839AA000DE82F3 /* BunqPaymentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BunqPaymentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8D14D828839AA000DE82F3 /* BunqPaymentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunqPaymentUITests.swift; sourceTree = "<group>"; };
+		4C8D14DA28839AA000DE82F3 /* BunqPaymentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunqPaymentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C8D14EC28839B1B00DE82F3 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4C8D14EE28839C3E00DE82F3 /* TransactionLocalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionLocalModel.swift; sourceTree = "<group>"; };
+		4C8D14F028839CEE00DE82F3 /* TransactionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionError.swift; sourceTree = "<group>"; };
+		4C8D14F32883A15200DE82F3 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		4C8D14F62883A17900DE82F3 /* TransactionSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSuccessView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C8D14B728839A9F00DE82F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8D14E928839AF300DE82F3 /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8D14C728839AA000DE82F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8D14D128839AA000DE82F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C8D14B128839A9F00DE82F3 = {
+			isa = PBXGroup;
+			children = (
+				4C8D14BC28839A9F00DE82F3 /* BunqPayment */,
+				4C8D14CD28839AA000DE82F3 /* BunqPaymentTests */,
+				4C8D14D728839AA000DE82F3 /* BunqPaymentUITests */,
+				4C8D14BB28839A9F00DE82F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C8D14BB28839A9F00DE82F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D14BA28839A9F00DE82F3 /* BunqPayment.app */,
+				4C8D14CA28839AA000DE82F3 /* BunqPaymentTests.xctest */,
+				4C8D14D428839AA000DE82F3 /* BunqPaymentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C8D14BC28839A9F00DE82F3 /* BunqPayment */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D14F52883A15600DE82F3 /* Views */,
+				4C8D14F22883A12400DE82F3 /* ViewModels */,
+				4C8D14EB28839B1200DE82F3 /* Entities */,
+				4C8D14EA28839B0000DE82F3 /* Models */,
+				4C8D14BD28839A9F00DE82F3 /* BunqPaymentApp.swift */,
+				4C8D14C128839AA000DE82F3 /* Assets.xcassets */,
+				4C8D14C328839AA000DE82F3 /* Preview Content */,
+			);
+			path = BunqPayment;
+			sourceTree = "<group>";
+		};
+		4C8D14C328839AA000DE82F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D14C428839AA000DE82F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4C8D14CD28839AA000DE82F3 /* BunqPaymentTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D14CE28839AA000DE82F3 /* BunqPaymentTests.swift */,
+			);
+			path = BunqPaymentTests;
+			sourceTree = "<group>";
+		};
+		4C8D14D728839AA000DE82F3 /* BunqPaymentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D14D828839AA000DE82F3 /* BunqPaymentUITests.swift */,
+				4C8D14DA28839AA000DE82F3 /* BunqPaymentUITestsLaunchTests.swift */,
+			);
+			path = BunqPaymentUITests;
+			sourceTree = "<group>";
+		};
+		4C8D14EA28839B0000DE82F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D14EE28839C3E00DE82F3 /* TransactionLocalModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C8D14EB28839B1200DE82F3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D14EC28839B1B00DE82F3 /* Transaction.swift */,
+				4C8D14F028839CEE00DE82F3 /* TransactionError.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4C8D14F22883A12400DE82F3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D14F32883A15200DE82F3 /* TransactionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C8D14F52883A15600DE82F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D14BF28839A9F00DE82F3 /* TransactionOverviewView.swift */,
+				4C8D14F62883A17900DE82F3 /* TransactionSuccessView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C8D14B928839A9F00DE82F3 /* BunqPayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C8D14DE28839AA000DE82F3 /* Build configuration list for PBXNativeTarget "BunqPayment" */;
+			buildPhases = (
+				4C8D14B628839A9F00DE82F3 /* Sources */,
+				4C8D14B728839A9F00DE82F3 /* Frameworks */,
+				4C8D14B828839A9F00DE82F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BunqPayment;
+			packageProductDependencies = (
+				4C8D14E828839AF300DE82F3 /* RealmSwift */,
+			);
+			productName = BunqPayment;
+			productReference = 4C8D14BA28839A9F00DE82F3 /* BunqPayment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C8D14C928839AA000DE82F3 /* BunqPaymentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C8D14E128839AA000DE82F3 /* Build configuration list for PBXNativeTarget "BunqPaymentTests" */;
+			buildPhases = (
+				4C8D14C628839AA000DE82F3 /* Sources */,
+				4C8D14C728839AA000DE82F3 /* Frameworks */,
+				4C8D14C828839AA000DE82F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C8D14CC28839AA000DE82F3 /* PBXTargetDependency */,
+			);
+			name = BunqPaymentTests;
+			productName = BunqPaymentTests;
+			productReference = 4C8D14CA28839AA000DE82F3 /* BunqPaymentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C8D14D328839AA000DE82F3 /* BunqPaymentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C8D14E428839AA000DE82F3 /* Build configuration list for PBXNativeTarget "BunqPaymentUITests" */;
+			buildPhases = (
+				4C8D14D028839AA000DE82F3 /* Sources */,
+				4C8D14D128839AA000DE82F3 /* Frameworks */,
+				4C8D14D228839AA000DE82F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C8D14D628839AA000DE82F3 /* PBXTargetDependency */,
+			);
+			name = BunqPaymentUITests;
+			productName = BunqPaymentUITests;
+			productReference = 4C8D14D428839AA000DE82F3 /* BunqPaymentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C8D14B228839A9F00DE82F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4C8D14B928839A9F00DE82F3 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					4C8D14C928839AA000DE82F3 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4C8D14B928839A9F00DE82F3;
+					};
+					4C8D14D328839AA000DE82F3 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4C8D14B928839A9F00DE82F3;
+					};
+				};
+			};
+			buildConfigurationList = 4C8D14B528839A9F00DE82F3 /* Build configuration list for PBXProject "BunqPayment" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C8D14B128839A9F00DE82F3;
+			packageReferences = (
+				4C8D14E728839AF300DE82F3 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 4C8D14BB28839A9F00DE82F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C8D14B928839A9F00DE82F3 /* BunqPayment */,
+				4C8D14C928839AA000DE82F3 /* BunqPaymentTests */,
+				4C8D14D328839AA000DE82F3 /* BunqPaymentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C8D14B828839A9F00DE82F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8D14C528839AA000DE82F3 /* Preview Assets.xcassets in Resources */,
+				4C8D14C228839AA000DE82F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8D14C828839AA000DE82F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8D14D228839AA000DE82F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C8D14B628839A9F00DE82F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8D14EF28839C3E00DE82F3 /* TransactionLocalModel.swift in Sources */,
+				4C8D14C028839A9F00DE82F3 /* TransactionOverviewView.swift in Sources */,
+				4C8D14F72883A17900DE82F3 /* TransactionSuccessView.swift in Sources */,
+				4C8D14F128839CEE00DE82F3 /* TransactionError.swift in Sources */,
+				4C8D14BE28839A9F00DE82F3 /* BunqPaymentApp.swift in Sources */,
+				4C8D14ED28839B1B00DE82F3 /* Transaction.swift in Sources */,
+				4C8D14F42883A15200DE82F3 /* TransactionViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8D14C628839AA000DE82F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8D14CF28839AA000DE82F3 /* BunqPaymentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8D14D028839AA000DE82F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8D14D928839AA000DE82F3 /* BunqPaymentUITests.swift in Sources */,
+				4C8D14DB28839AA000DE82F3 /* BunqPaymentUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C8D14CC28839AA000DE82F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C8D14B928839A9F00DE82F3 /* BunqPayment */;
+			targetProxy = 4C8D14CB28839AA000DE82F3 /* PBXContainerItemProxy */;
+		};
+		4C8D14D628839AA000DE82F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C8D14B928839A9F00DE82F3 /* BunqPayment */;
+			targetProxy = 4C8D14D528839AA000DE82F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4C8D14DC28839AA000DE82F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C8D14DD28839AA000DE82F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C8D14DF28839AA000DE82F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BunqPayment/Preview Content\"";
+				DEVELOPMENT_TEAM = 3W72UD8W92;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelfromage.BunqPayment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C8D14E028839AA000DE82F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BunqPayment/Preview Content\"";
+				DEVELOPMENT_TEAM = 3W72UD8W92;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelfromage.BunqPayment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C8D14E228839AA000DE82F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3W72UD8W92;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelfromage.BunqPaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BunqPayment.app/BunqPayment";
+			};
+			name = Debug;
+		};
+		4C8D14E328839AA000DE82F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3W72UD8W92;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelfromage.BunqPaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BunqPayment.app/BunqPayment";
+			};
+			name = Release;
+		};
+		4C8D14E528839AA000DE82F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3W72UD8W92;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelfromage.BunqPaymentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BunqPayment;
+			};
+			name = Debug;
+		};
+		4C8D14E628839AA000DE82F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3W72UD8W92;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelfromage.BunqPaymentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BunqPayment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C8D14B528839A9F00DE82F3 /* Build configuration list for PBXProject "BunqPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8D14DC28839AA000DE82F3 /* Debug */,
+				4C8D14DD28839AA000DE82F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C8D14DE28839AA000DE82F3 /* Build configuration list for PBXNativeTarget "BunqPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8D14DF28839AA000DE82F3 /* Debug */,
+				4C8D14E028839AA000DE82F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C8D14E128839AA000DE82F3 /* Build configuration list for PBXNativeTarget "BunqPaymentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8D14E228839AA000DE82F3 /* Debug */,
+				4C8D14E328839AA000DE82F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C8D14E428839AA000DE82F3 /* Build configuration list for PBXNativeTarget "BunqPaymentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8D14E528839AA000DE82F3 /* Debug */,
+				4C8D14E628839AA000DE82F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C8D14E728839AF300DE82F3 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C8D14E828839AF300DE82F3 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C8D14E728839AF300DE82F3 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4C8D14B228839A9F00DE82F3 /* Project object */;
+}
